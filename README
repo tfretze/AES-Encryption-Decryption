@@ -1,0 +1,25 @@
+AES Encryption/Decryption
+Student Number: C3200070
+Author: Tomas Fretze
+How to compile and run: 
+
+Program was created and compiled using GNU C++, i chose this as it was used for data structures last semester and i was more comfortable in this environment
+
+Make file has been included in the Assignment folder. Program will need to be launched from a unix environment such as cygwin. 
+
+The program will start by automatically opening the inputEncryption text file which contains the message and the key then encrypt the message and perform the avalanche analysis on the input. It will then write the result to the outputEncrypt text file.
+
+The program will then perform the decrytion component. This invoves opening the inputDecryption text file which contains the ciphertext and the key then decrypts the ciphertext and writes the result to outputDecrypt.txt.
+
+Code Structure:
+MainAES.cpp is the main file used for running the higher level processess such as the encryption and decryption methods, avalanche anlaysis, reading and outputing to text files.
+
+AdvancedEncrypt.h and .hpp contain the AdvancedEncrypt class and all the methods to perform encryption and decryption.
+
+Lookup.h contains variable lookup tables that will be accessed by AdvancedEncrypt class
+
+Executable: Ass2AES.exe
+
+Sources:
+https://www.samiam.org/ used for understanding how the various rounds could be implemented
+https://www.youtube.com/watch?v=K2Xfm0-owS4 in depth implementation of AES
